@@ -2,8 +2,148 @@
 <html>
     <head>
         <title>Feed</title>
+
+        <style>
+        /* General Utility Stylings*/
+
+            * {
+		        box-sizing: border-box;
+	        }
+
+        /* Header, Menu, Settings */
+            header { /* Top Banner */
+                height: 3vh; /*viewpoint height - totals to 100*/
+                text-align: center;
+                border: 1px solid black;
+            }
+            nav { /*menu and settings */
+                height: 2vh;
+                border: 1px solid black;
+            }
+            .menu {
+                display: inline;
+                height: 2vh;
+                border: 1px solid black;
+                text-align: left;
+            }
+            .settings {
+                display: inline;
+                height: 2vh;
+                float: right;
+                border: 1px solid black;
+                text-align: right;
+            }
+          
+        /* Main Window, Main Feed, SubFeed */
+            article { /*Main Window container */
+                border: 1px solid black;
+                height: 85vh; 
+
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .mainFeed {
+                width: 50vw; /*percentage of view width*/
+                height: 80vh;
+
+                float: left;
+                border: 1px solid black;
+
+                margin: 5px;
+
+                padding: 5px 20px;
+            }
+            .subFeed {
+                width: 40vw;
+                height: 40vh;
+
+                float: right;
+                border: 1px solid black;
+
+                margin: 5px;
+                padding: 5px 20px;
+            }
+
+        /* Command Prompt and Ping Window */
+            footer {
+                height: 5vh;
+                border: 1px solid black;
+            }
+            .commandPromptWindow {
+                float: left;
+                border: 1px solid black;
+                text-align: left;
+                height: 5vh;
+                width: 50vw;
+
+                padding: 5px 20px;
+            }
+            .pingWindow {
+                display: inline;
+                float: right;
+                border: 1px solid black;
+                text-align: right;
+
+                height: 5vh;
+                width: 30vw;
+
+                padding: 5px 20px;
+            }
+
+        </style>
     </head>
     <main>
-        This is a test.
+        <!-- Banner along the top of the page-->
+        <header>
+            <strong>The Feed</strong>
+        </header>
+
+        <!-- Menu and Settings buttons in a ribbon below the header-->
+        <nav>
+            <div class="menu">
+                Menu
+            </div>
+            <div class="settings">
+                Settings
+            </div>
+        </nav>
+
+
+        <!-- Main Feed window -->
+        <article>
+            <section class="mainFeed">
+                <h1>
+                    Main Feed window
+                </h1>
+                  <p>
+                    This is where all the main feed messages would go.
+                 </p>
+            </section>
+
+
+             <!-- Sub Feed Main Window -->
+            <section class="subFeed">
+                 <h2>
+                     Sub-Feed Main Displayed
+                 </h2>
+               <p>
+                This is where the Displayed subfeed would be.
+                 </p>
+            </section>
+        </article>
+
+    
+
+        <!-- Command Promp and Ping -->
+        <footer>
+            <div class="commandPromptWindow">
+                Command Prompt Input
+            </div>
+            <div class="pingWindow">
+                Ping Window
+            </div>
+        </footer>
     </main>
 </html>
